@@ -1,0 +1,32 @@
+.clients-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.clients-item {
+    flex-basis: calc((100% - 5 * 30px) / 6);
+    padding: 16px 31px;
+    border: 1px solid var(--accent-grey-icon);
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: border var(--transition-dur-and-fun);
+
+    &:hover {
+        border: 1px solid var(--accent-color);
+    }
+}
+
+.clients-item .clients-icon {
+    transition: fill var(--transition-dur-and-fun);
+}
+
+.clients-icon {
+    fill: var(--accent-grey-icon);
+}
+
+.clients-item:hover .clients-icon {
+    fill: var(--accent-color);
+}
+

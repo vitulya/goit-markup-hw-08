@@ -1,0 +1,17 @@
+.main-footer {
+    background-color: var(--backgrounh-third-color);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main-footer-logo {
+    color: var(--primery-white-color);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.footer-container {
+    display: flex;
+    column-gap: 70px;
+}

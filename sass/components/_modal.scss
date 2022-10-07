@@ -1,0 +1,10 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    background-color: var(--primery-white-color);
+
+    padding: 40px;
+}

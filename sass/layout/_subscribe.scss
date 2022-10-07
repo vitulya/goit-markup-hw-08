@@ -1,0 +1,36 @@
+.subscribe {
+    margin-left: auto;
+}
+
+.subscribe-input {
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 16px;
+    margin-right: 12px;
+}
+.subscribe-btn {
+    padding: 10px 62px 10px 33px;
+}
+.subscribe-discription {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primery-white-color);
+    margin-bottom: 20px;
+}
+.subscribe-button-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.subscribe-icon-telegram {
+    position: absolute;
+    bottom: 50%;
+    right: 28px;
+    transform: translateY(50%);
+}
+
