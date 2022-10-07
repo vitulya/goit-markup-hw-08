@@ -20,11 +20,63 @@
 
   <body>
     <!-- ХЕДЕР -->
-    <!-- <header class="main-header">
+    <header class="main-header">
+      <!-- МОБІЛЬНЕ МЕНЮ  -->
+      <div class="mobile-menu">
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__btn">
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+
+          <!-- перенесене з навігації(хедера) -->
+          <nav class="navigation">
+            <ul class="navigation-list list">
+              <li class="navigation-list-item">
+                <a class="navigation-list-link active link" href="index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link" href="portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contact-list list">
+            <li class="contact-list-item">
+              <a class="contact-list-link link" href="tel:+380961111111">
+                +380961111111</a
+              >
+            </li>
+            <li class="contact-list-item">
+              <a
+                class="contact-list-link link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ХЕДЕР контент -->
       <div class="container main-header-content">
         <a class="main-header-logo logo link" href="index.html">
           <span class="accent">Web</span>Studio</a
         >
+        <button type="button" class="mobile-menu-btn">
+          <svg class="mobile-menu-btm-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
 
         <nav class="navigation">
           <ul class="navigation-list list">
@@ -63,7 +115,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <!-- <!-- ГОЛОВНА ЧАСТИНА -->
     <main>
@@ -138,7 +190,7 @@
       </section> -->
 
       <!-- СЕКЦІЯ ПРИКЛАДУ РОБІТ -->
-      <section class="section work">
+      <!-- <section class="section work">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="work__list list">
@@ -171,7 +223,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- СЕКЦІЯ КОМАНДИ -->
 
@@ -421,7 +473,6 @@
                 </ul>
               </div>
             </li>
-
 
             <li class="team-item">
               <picture>
