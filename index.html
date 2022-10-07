@@ -138,17 +138,17 @@
       </section> -->
 
       <!-- СЕКЦІЯ ПРИКЛАДУ РОБІТ -->
-      <section class="section work">
+      <!-- <section class="section work">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="work__list list">
             <li class="work__item">
               <img
                 srcset="
-                  ./images/desctops/work-1.jpg    1x,
-                  ./images/desctops/work@2x-1.jpg 2x
+                  ./images/desctops/work-1d.jpg    1x,
+                  ./images/desctops/work@2x-1d.jpg 2x
                 "
-                src="./images/desctops/work-1.jpg"
+                src="./images/desctops/work-1d.jpg"
                 alt="Робочий стіл"
                 width="370"
               />
@@ -157,10 +157,10 @@
             <li class="work__item">
               <img
                 srcset="
-                  ./images/desctops/work-2.jpg    1x,
-                  ./images/desctops/work@2x-2.jpg 2x
+                  ./images/desctops/work-2d.jpg    1x,
+                  ./images/desctops/work@2x-2d.jpg 2x
                 "
-                src="./images/desctops/work-2.jpg"
+                src="./images/desctops/work-2d.jpg"
                 alt="Ноутбук та телефон"
                 width="370"
               />
@@ -169,10 +169,10 @@
             <li class="work__item">
               <img
                 srcset="
-                  ./images/desctops/work-3.jpg    1x,
-                  ./images/desctops/work@2x-3.jpg 2x
+                  ./images/desctops/work-3d.jpg    1x,
+                  ./images/desctops/work@2x-3d.jpg 2x
                 "
-                src="./images/desctops/work-3.jpg"
+                src="./images/desctops/work-3d.jpg"
                 alt="Планшет"
                 width="370"
               />
@@ -180,19 +180,45 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- <section class="section team">
+      <!-- СЕКЦІЯ КОМАНДИ -->
+
+      <section class="section team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                class="team-photo"
-                src="./images/desctops/team-1-1x.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctops/team-1d.jpg    1x,
+                    ./images/desctops/team@2x-1d.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablets/team-1t.jpg    1x,
+                    ./images/tablets/team@2x-1t.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobils/team-1m.jpg    1x,
+                    ./images/mobils/team@2x-1m.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="team-photo"
+                  src="./images/desctops/team-1d.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
+
               <div class="team-description">
                 <h3 class="team-head">Ігор Дем'яненко</h3>
                 <p class="team-text">Product Designer</p>
@@ -244,12 +270,36 @@
             </li>
 
             <li class="team-item">
-              <img
-                class="team-photo"
-                src="./images/desctops/team-2-1x.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctops/team-2d.jpg    1x,
+                    ./images/desctops/team@2x-2d.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablets/team-2t.jpg    1x,
+                    ./images/tablets/team@2x-2t.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobils/team-2m.jpg    1x,
+                    ./images/mobils/team@2x-2m.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="team-photo"
+                  src="./images/desctops/team-2d.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
+
               <div class="team-description">
                 <h3 class="team-head">Ольга Рєпіна</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -301,12 +351,36 @@
             </li>
 
             <li class="team-item">
-              <img
-                class="team-photo"
-                src="./images/desctops/team-3-1x.jpg"
-                alt="Микола Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctops/team-3d.jpg    1x,
+                    ./images/desctops/team@2x-3d.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablets/team-3t.jpg    1x,
+                    ./images/tablets/team@2x-3t.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobils/team-3m.jpg    1x,
+                    ./images/mobils/team@2x-3m.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="team-photo"
+                  src="./images/desctops/team-3d.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
+
               <div class="team-description">
                 <h3 class="team-head">Микола Тарасов</h3>
                 <p class="team-text">Marketing</p>
@@ -356,14 +430,39 @@
                 </ul>
               </div>
             </li>
+            -->
 
             <li class="team-item">
-              <img
-                class="team-photo"
-                src="./images/desctops/team-4-1x.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctops/team-4d.jpg    1x,
+                    ./images/desctops/team@2x-4d.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablets/team-4t.jpg    1x,
+                    ./images/tablets/team@2x-4t.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobils/team-4m.jpg    1x,
+                    ./images/mobils/team@2x-4m.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="team-photo"
+                  src="./images/desctops/team-4d.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
+
               <div class="team-description">
                 <h3 class="team-head">Михайло Єрмаков</h3>
                 <p class="team-text">UI Designer</p>
@@ -415,7 +514,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+      -->
 
       <!-- СЕКЦІЯ ПОСТІЙНИХ КЛІЄНТІВ -->
       <!-- <section class="section clients">
