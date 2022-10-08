@@ -7,13 +7,30 @@
     height: 100%;
     max-height: 796px;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.2); 
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity var(--transition-dur-and-fun), visibility var(--transition-dur-and-fun);
+}
+
+.mobile-menu.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .mobile-menu__container{
+    height: 100%;
     position: relative;
     padding: 48px 40px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+    background-color: var(--primery-white-color);
 }
 .mobile-menu__close-btn{
     position: absolute;
@@ -24,10 +41,89 @@
     border: none;
     background-color: transparent;
 
-    transition: fill 2000ms linear;
+
+}
+.mobile-menu__close-btn .mobile-menu__close-icon{
+    transition: fill var(--transition-dur-and-fun);
 }
 
-.mobile-menu__close-btn:hover .mobile-menu__close-icon{
+.mobile-menu__close-btn:hover .mobile-menu__close-icon,
+.mobile-menu__close-btn:focus .mobile-menu__close-icon{
     fill: var(--accent-color);
 }
+
+.navigation-mobile__list{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+}
+
+.navigation-mobile__item:not(:last-child){
+    margin-bottom: 35px;
+}
+
+.navigation-mobile__link{
+    color: var(--primery-grey-color);
+}
+
+.navigation-mobile__link.active {
+    color: var(--accent-color);
+}
+
+.mobile-menu__footer {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.contact-mobile__item-tel{
+    font-size: 34px;
+    line-height: 1.17;
+
+    margin-bottom: 32px;
+}
+
+
+.contact-mobile__link-tel{
+    color: var(--accent-color);
+}
+
+.contact-mobile__item-mail{
+    font-size: 24px;
+    line-height: 1.16;
+
+    margin-bottom: 64px;
+}
+
+.contact-mobile__link-mail{
+    color: var(--primery-text-color)
+}
+
+.social-mobile__list{
+    display: flex;
+}
+
+.social-mobile__item{
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 0 10px;
+}
+
+.social-mobile__item:first-child{
+    padding-left: 0;
+}
+
+.social-mobile__item:last-child {
+    padding-right: 0;
+}
+
+.social-mobile__item:not(:last-child){
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.social-mobile__link{
+    color: var(--accent-color);
+}
+
 

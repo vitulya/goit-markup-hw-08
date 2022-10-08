@@ -23,61 +23,71 @@
     <header class="main-header is-open">
       <!-- МОБІЛЬНЕ МЕНЮ -->
 
-      <div class="mobile-menu">
+      <div class="mobile-menu is-open" data-menu>
         <div class="container mobile-menu__container">
-          <button type="button" class="mobile-menu__close-btn">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
             <svg class="mobile-menu__close-icon" width="40" height="40">
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
           </button>
-          <nav class="navigation-mobile">
-            <ul class="navigation-mobile__list list">
-              <li class="navigation-mobile__item">
-                <a class="navigation-mobile__link active link" href="index.html"
-                  >Студія</a
+
+          <div class="mobile-menu__header">
+            <nav class="navigation-mobile">
+              <ul class="navigation-mobile__list list">
+                <li class="navigation-mobile__item">
+                  <a
+                    class="navigation-mobile__link active link"
+                    href="index.html"
+                    >Студія</a
+                  >
+                </li>
+                <li class="navigation-mobile__item">
+                  <a class="navigation-mobile__link link" href="portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="navigation-mobile__item">
+                  <a class="navigation-mobile__link link" href="">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="mobile-menu__footer">
+            <ul class="contact-mobile__list list">
+              <li class="contact-mobile__item-tel">
+                <a
+                  class="contact-mobile__link-tel link"
+                  href="tel:+380961111111"
+                >
+                  +380961111111</a
                 >
               </li>
-              <li class="navigation-mobile__item">
-                <a class="navigation-mobile__link link" href="portfolio.html"
-                  >Портфоліо</a
+              <li class="contact-mobile__item-mail">
+                <a
+                  class="contact-mobile__link-mail link"
+                  href="mailto:info@devstudio.com"
                 >
-              </li>
-              <li class="navigation-mobile__item">
-                <a class="navigation-mobile__link link" href="">Контакти</a>
+                  info@devstudio.com</a
+                >
               </li>
             </ul>
-          </nav>
 
-          <ul class="contact-mobile__list list">
-            <li class="contact-mobile__item">
-              <a class="contact-mobile__link link" href="tel:+380961111111">
-                +380961111111</a
-              >
-            </li>
-            <li class="contact-mobile__item">
-              <a
-                class="contact-mobile__link link"
-                href="mailto:info@devstudio.com"
-              >
-                info@devstudio.com</a
-              >
-            </li>
-          </ul>
-
-          <ul class="social-mobile__list list">
-            <li class="social-mobile__item">
-              <a href="" class="social-mobile__link link">Instagram</a>
-            </li>
-            <li class="social-mobile__item">
-              <a href="" class="social-mobile__link link">Twitter</a>
-            </li>
-            <li class="social-mobile__item">
-              <a href="" class="social-mobile__link link">Facebook</a>
-            </li>
-            <li class="social-mobile__item">
-              <a href="" class="social-mobile__link link">LinkedIn</a>
-            </li>
-          </ul>
+            <ul class="social-mobile__list list">
+              <li class="social-mobile__item">
+                <a href="" class="social-mobile__link link">Instagram</a>
+              </li>
+              <li class="social-mobile__item">
+                <a href="" class="social-mobile__link link">Twitter</a>
+              </li>
+              <li class="social-mobile__item">
+                <a href="" class="social-mobile__link link">Facebook</a>
+              </li>
+              <li class="social-mobile__item">
+                <a href="" class="social-mobile__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
