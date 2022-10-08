@@ -20,64 +20,77 @@
 
   <body>
     <!-- ХЕДЕР -->
-    <header class="main-header">
-      <!-- МОБІЛЬНЕ МЕНЮ  -->
+    <header class="main-header is-open">
+      <!-- МОБІЛЬНЕ МЕНЮ -->
+
       <div class="mobile-menu">
         <div class="container mobile-menu__container">
-          <button type="button" class="mobile-menu__btn">
-            <svg class="mobile-menu__close-icon">
+          <button type="button" class="mobile-menu__close-btn">
+            <svg class="mobile-menu__close-icon" width="40" height="40">
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
           </button>
-
-          <!-- перенесене з навігації(хедера) -->
-          <nav class="navigation">
-            <ul class="navigation-list list">
-              <li class="navigation-list-item">
-                <a class="navigation-list-link active link" href="index.html"
+          <nav class="navigation-mobile">
+            <ul class="navigation-mobile__list list">
+              <li class="navigation-mobile__item">
+                <a class="navigation-mobile__link active link" href="index.html"
                   >Студія</a
                 >
               </li>
-              <li class="navigation-list-item">
-                <a class="navigation-list-link link" href="portfolio.html"
+              <li class="navigation-mobile__item">
+                <a class="navigation-mobile__link link" href="portfolio.html"
                   >Портфоліо</a
                 >
               </li>
-              <li class="navigation-list-item">
-                <a class="navigation-list-link link" href="">Контакти</a>
+              <li class="navigation-mobile__item">
+                <a class="navigation-mobile__link link" href="">Контакти</a>
               </li>
             </ul>
           </nav>
 
-          <ul class="contact-list list">
-            <li class="contact-list-item">
-              <a class="contact-list-link link" href="tel:+380961111111">
+          <ul class="contact-mobile__list list">
+            <li class="contact-mobile__item">
+              <a class="contact-mobile__link link" href="tel:+380961111111">
                 +380961111111</a
               >
             </li>
-            <li class="contact-list-item">
+            <li class="contact-mobile__item">
               <a
-                class="contact-list-link link"
+                class="contact-mobile__link link"
                 href="mailto:info@devstudio.com"
               >
                 info@devstudio.com</a
               >
             </li>
           </ul>
+
+          <ul class="social-mobile__list list">
+            <li class="social-mobile__item">
+              <a href="" class="social-mobile__link link">Instagram</a>
+            </li>
+            <li class="social-mobile__item">
+              <a href="" class="social-mobile__link link">Twitter</a>
+            </li>
+            <li class="social-mobile__item">
+              <a href="" class="social-mobile__link link">Facebook</a>
+            </li>
+            <li class="social-mobile__item">
+              <a href="" class="social-mobile__link link">LinkedIn</a>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <!-- ХЕДЕР контент -->
+      <!-- ХЕДЕР КОНТЕНТ -->
       <div class="container main-header-content">
         <a class="main-header-logo logo link" href="index.html">
           <span class="accent">Web</span>Studio</a
         >
-        <button type="button" class="mobile-menu-btn">
-          <svg class="mobile-menu-btm-icon" width="40" height="40">
+        <button type="button" class="mobile-burger-menu-btn" data-menu-open>
+          <svg class="burger-mobile-icon" width="40" height="40">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
-
         <nav class="navigation">
           <ul class="navigation-list list">
             <li class="navigation-list-item">
@@ -766,7 +779,7 @@
         </form> -->
     <!-- </div>
     </div> -->
-
+    <script src="./js/mobile-menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
