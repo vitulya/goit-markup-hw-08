@@ -27,7 +27,7 @@
   overflow: hidden;
 }
 
-.social-icon-link, .modal-close-button, .modal-rigts, .wrapper {
+.social-icon-link, .modal-close-button, .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,16 +380,26 @@ body {
 }
 
 .modal-textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 1.1;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
+@media screen and (min-width: 1200) {
+  .modal-textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
 .modal-rigts {
   position: relative;
-  font-size: 14px;
-  line-height: 1.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
   margin-bottom: 30px;
@@ -398,12 +408,22 @@ body {
 .modal-svg {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 0;
   transform: translateY(-50%);
   border: 2px solid var(--primery-grey-color);
   border-radius: 2px;
   cursor: pointer;
   transition: background-color var(--transition-dur-and-fun), border var(--transition-dur-and-fun);
+}
+
+@media screen and (max-width: 480px) {
+  .modal-rigts {
+    flex-direction: column;
+    align-items: end;
+  }
+  .modal-svg {
+    top: 75%;
+  }
 }
 
 .modal-svg-icon {
@@ -427,6 +447,16 @@ body {
   display: block;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-rigts {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .modal-svg {
+    left: 12px;
+  }
+}
+
 .modal-send-btn {
   display: block;
   margin: auto;
@@ -443,9 +473,21 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
   background-color: var(--primery-white-color);
+  width: 100%;
   padding: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .filters {
