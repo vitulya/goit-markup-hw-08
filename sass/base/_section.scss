@@ -2,6 +2,8 @@
  @include padding(60px, 60px)
 }
 
-@media screen and(min-width:768px) {
-    @include padding(94px, 94px)
+@media screen and(min-width:1200px) {
+    .section{
+        @include padding(94px, 94px);
+    }
 }
