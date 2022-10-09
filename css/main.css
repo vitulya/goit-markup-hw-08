@@ -907,12 +907,14 @@ body {
 
 .clients-list {
   display: flex;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .clients-item {
-  flex-basis: calc((100% - 5 * 30px) / 6);
-  padding: 16px 31px;
+  flex-basis: calc((100% - 30px) / 2);
+  padding: 16px 50px;
   border: 1px solid var(--accent-grey-icon);
   border-radius: 4px;
   cursor: pointer;
@@ -921,6 +923,16 @@ body {
 
 .clients-item:hover {
   border: 1px solid var(--accent-color);
+}
+
+@media screen and (max-width: 479px) {
+  .clients-list {
+    display: block;
+    text-align: center;
+  }
+  .clients-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .clients-item .clients-icon {
@@ -933,6 +945,20 @@ body {
 
 .clients-item:hover .clients-icon {
   fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .clients-item {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    padding: 16px 58px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    flex-basis: calc((100% - 5 * 30px) / 6);
+    padding: 16px 30px;
+  }
 }
 
 .main-footer {
