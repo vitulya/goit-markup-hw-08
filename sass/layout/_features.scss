@@ -3,6 +3,9 @@
 }
 
 .features__item-title {
+    width: 100%;
+    text-align: center;
+
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
@@ -31,6 +34,7 @@
     .features__item:not(:last-child) {
         margin-bottom: 30px;
     }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -41,6 +45,9 @@
         }
     .features__item {
         flex-basis: calc((100% - 30px) / 2);
+    }
+    .features__item-title {
+        text-align: start;
     }
 }
 
