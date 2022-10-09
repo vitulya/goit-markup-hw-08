@@ -18,12 +18,17 @@
         justify-content: space-between;
         margin-bottom: 60px;
     }
+    .footer-container {
+        padding-left: 76px;
+        padding-right: 89px;
+    }
 }
 
 @media screen and(min-width:1200px) {
     .footer-container {
         display: flex;
-}
+        padding: 0 15px;
+    }
     .tablet-footer__container{  
         margin-bottom: 0;
     }
