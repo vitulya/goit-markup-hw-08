@@ -73,6 +73,11 @@ body {
 }
 
 .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -629,27 +634,25 @@ body {
   }
 }
 
-.hero {
-  margin: auto;
-  max-width: 1600px;
-  text-align: center;
-  background-color: var(--background-hero);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctops/hero-d.jpg);
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/desctops/hero@2x-d.jpg");
   }
 }
 
+.hero {
+  margin: auto;
+  text-align: center;
+  background-color: var(--background-hero);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctops/hero-d.jpg);
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
 .hero-title {
-  width: 696px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   margin-right: auto;
   margin-left: auto;
@@ -659,12 +662,43 @@ body {
 }
 
 .hero-btn {
-  padding: 10px 32px;
+  padding: 10px 24px;
   transition: background-color var(--transition-dur-and-fun);
 }
 
 .hero-btn:hover, .hero-btn:focus {
   background-color: var(--background-button-active);
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    max-width: 480px;
+  }
+  .hero-title {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero-title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.4;
+  }
+  .hero-btn {
+    padding: 10px 32px;
+  }
 }
 
 .features {
