@@ -236,14 +236,21 @@ body {
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--primery-black-color);
 }
 
 .logo .accent {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .section__title {
@@ -963,6 +970,7 @@ body {
 
 .main-footer {
   background-color: var(--backgrounh-third-color);
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -973,9 +981,28 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-container {
-  display: flex;
-  column-gap: 70px;
+@media screen and (min-width: 768px) {
+  .tablet-footer__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+  }
+  .tablet-footer__container {
+    margin-bottom: 0;
+  }
+  .main-footer {
+    text-align: start;
+  }
+}
+
+.footer-adress {
+  margin-bottom: 60px;
 }
 
 .adress {
@@ -1004,13 +1031,29 @@ body {
   margin-bottom: 9px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-adress {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-adress {
+    margin-right: 70px;
+  }
+}
+
+.footer-join {
+  margin-bottom: 60px;
+}
+
 .footer-join-title {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primery-white-color);
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .footer-join-icon {
@@ -1022,18 +1065,32 @@ body {
   border-radius: 50%;
 }
 
-.subscribe {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .footer-join {
+    margin-bottom: 0;
+  }
 }
 
 .subscribe-input {
-  width: 358px;
+  width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
   padding: 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 479px) {
+  .subscribe-input {
+    width: 100%;
+  }
+}
+
+.subscribe-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subscribe-btn {
@@ -1060,6 +1117,18 @@ body {
   bottom: 50%;
   right: 28px;
   transform: translateY(50%);
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: auto;
+  }
+  .subscribe-input {
+    width: 358px;
+  }
+  .subscribe-label {
+    align-items: flex-start;
+  }
 }
 
 .backdrop {
