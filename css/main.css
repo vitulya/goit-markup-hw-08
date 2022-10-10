@@ -709,6 +709,7 @@ body {
   text-align: center;
   background-color: var(--background-hero);
   max-width: 100%;
+  background-size: contain;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobils/hero-m.jpg);
   padding-top: 118px;
   padding-bottom: 118px;
@@ -738,6 +739,12 @@ body {
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobils/hero@2x-m.jpg");
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hero {
+    background-size: cover;
   }
 }
 
