@@ -428,12 +428,8 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  .modal-rigts {
-    flex-direction: column;
-    align-items: end;
-  }
-  .modal-svg {
-    top: 75%;
+  .modal-rigts__content {
+    padding-left: 20px;
   }
 }
 
@@ -1177,6 +1173,8 @@ body {
     width: 358px;
   }
   .subscribe-label {
+    flex-direction: row;
+    column-gap: 12px;
     align-items: flex-start;
   }
 }

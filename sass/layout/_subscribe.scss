@@ -54,6 +54,8 @@
         width: 358px;
     }
     .subscribe-label{
+        flex-direction: row;
+        column-gap: 12px;
         align-items: flex-start;
     }
 }
